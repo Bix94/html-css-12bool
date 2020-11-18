@@ -37,12 +37,8 @@
   background-color: red;
   border-color: 1px solid white;
 }
-.nested::after{
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .nested [class*="col-"]{
-  float: left;
+
   height: 100%;
 }
