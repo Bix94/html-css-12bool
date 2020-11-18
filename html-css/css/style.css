@@ -1,0 +1,48 @@
+/* regole di defaul */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* row */
+.row{
+  height: 150px;
+  background-color: pink;
+  text-align: center;
+  line-height: 150px;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class*="col-"]{
+  float: left;
+  height: 100%;
+  border: 1px solid black;
+}
+.row .row{
+  padding: 5px;
+  line-height: 150px;
+}
+.row .row [class*="col-"]{
+  border: 1px solid white;
+}
+/* nested */
+.nested{
+  background-color: red;
+  border-color: 1px solid white;
+}
+.nested::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.nested [class*="col-"]{
+  float: left;
+  height: 100%;
+}
