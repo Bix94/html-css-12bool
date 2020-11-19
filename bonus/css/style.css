@@ -1,0 +1,37 @@
+/* regole di defaul */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* row */
+.row{
+  height: 49px;
+  text-align: center;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class*="col-"]{
+  float: left;
+  height: 100%;
+  border-color: 2px solid black;
+}
+.black{
+  background-color: black;
+}
+.orange{
+  background-color: rgb(255, 130, 0);
+}
+.yellow{
+  background-color: #fdd03e;
+}
+.red{
+  background-color: red;
+}
